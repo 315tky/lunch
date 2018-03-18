@@ -2,9 +2,10 @@
 
 Ideas and ToDos :
 - Restaurants model
-- Users model
+- Users model ( will need account / login feature etc.. )
 - Geolocation/geocoder features
-- Tags / Tagging model/s ( User tags restaurant in his list, tags belong to user, refer to restaurant ) - if have tags, maybe no need for having a 'restaurant types' or descriptions - let user tag instead ??
-- Favourites feature ( User marks restaurant in users restuarant list as Fav, appears in users Fav restaurant list )
-- Users 'follow' users feature, can then include, e.g., notifcation of when a user adds a new place
-    - With some user control features on what followers can see/access, could maybe have some kind of a <i>'meet me'</i> feature, and/or a kind of broadcast feature, <i>'I'm here now, meet me for lunch if you are nearby'</i>
+- Tags / Tagging model/s - allow tags for places ( this perhaps negates needing a place 'type' etc.. )
+- Search
+- Favourite place feature - User can mark favs in their list, others can view etc.. 
+- Users 'follow' or 'connect' feature, allows such features as notifcation of when a user adds a new place
+    - maybe a broadcast feature, to alert friends you are at a certain place, for meet-up etc..
