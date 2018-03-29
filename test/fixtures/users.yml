@@ -7,3 +7,10 @@
 #two:
 #  name: MyString
 #  email: MyString
+
+#The above is original entries, ignore unless otherwise
+
+michael:
+  name: Michael Example
+  email: michael@example.com
+  password_digest: <%= User.digest('password') %> # This creates a valid password digest for the test user.
