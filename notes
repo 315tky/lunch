@@ -11,3 +11,5 @@ Later - use geo code, maybe the drill down opens google maps ?
 
 ###
 ## at 8.2.3
+
+## will have to setup emailing in production, see end of chapter 11 for useful info
