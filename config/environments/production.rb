@@ -75,8 +75,8 @@ Rails.application.configure do
     address:        'smtp.gmail.com',
     port:           587,
     domain:         'lunch-dev.saigos.space',
-    user_name:      'lunchapp.notifications@gmail.com',
-    password:       'In0de!lunchapp',
+    user_name:      Figaro.env.gmail_username, 
+    password:       Figaro.env.gmail_password,
     authentication: 'plain',
     enable_starttls_auto: true
   }
