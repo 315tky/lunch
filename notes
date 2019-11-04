@@ -13,3 +13,11 @@ Later - use geo code, maybe the drill down opens google maps ?
 ## at 8.2.3
 
 ## will have to setup emailing in production, see end of chapter 11 for useful info
+
+# 7th May -
+# site not working correctly - no drop down menu etc.. seems like just static ? 
+# need to futz around more with passenger/nginx and how to run rails server ( do even need to run rails server ? need to dig around on this ), issue could be asset pipeline etc. ? 
+# also need to set up email, and check the congifuration in the rails app for what mailer is pointed to, this may need changing to our app hostname ! ( lunch-dev.saigo.space ) ???
+
+9th May : 
+need to set config values such as prod db username and password and secret-key, and gmail pass to an environments file, and .gitignore that file, so this doesnt end up on github - done - used Figaro gem - application.yml

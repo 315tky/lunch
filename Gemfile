@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '5.1.5'
+gem 'figaro'
 gem 'bootstrap-sass', '3.3.7'
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'bcrypt', '3.1.11'
 gem 'faker', '1.7.3' # makes fake accounts - remove when in production
 gem 'will_paginate', '3.1.6' 
@@ -14,6 +16,7 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'therubyracer', :platforms => :ruby
+gem 'nokogiri', '1.8.2' 
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
@@ -36,6 +39,7 @@ end
 
 group :production do
   gem 'pg', '0.18.4'
+  gem 'activerecord-postgresql-adapter' 
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

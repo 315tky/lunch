@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/doabit/semantic-ui-sass.git
+  revision: 68014cb2d32bcce07b3a0a7a9853910858b35fb8
+  specs:
+    semantic-ui-sass (2.3.1.2)
+      sass (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -33,6 +40,8 @@ GEM
       activemodel (= 5.1.5)
       activesupport (= 5.1.5)
       arel (~> 8.0)
+    activerecord-postgresql-adapter (0.0.1)
+      pg
     activesupport (5.1.5)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
@@ -66,6 +75,8 @@ GEM
     faker (1.7.3)
       i18n (~> 0.5)
     ffi (1.9.23)
+    figaro (1.1.1)
+      thor (~> 0.14)
     formatador (0.2.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -213,23 +224,27 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-postgresql-adapter
   bcrypt (= 3.1.11)
   bootstrap-sass (= 3.3.7)
   bootstrap-will_paginate (= 1.0.0)
   byebug (= 9.0.6)
   coffee-rails (= 4.2.2)
   faker (= 1.7.3)
+  figaro
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
   jbuilder (= 2.7.0)
   jquery-rails (= 4.3.1)
   listen (= 3.1.5)
   minitest-reporters (= 1.1.14)
+  nokogiri (= 1.8.2)
   pg (= 0.18.4)
   puma (= 3.9.1)
   rails (= 5.1.5)
   rails-controller-testing (= 1.0.2)
   sass-rails (= 5.0.6)
+  semantic-ui-sass!
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)
   sqlite3 (= 1.3.13)
