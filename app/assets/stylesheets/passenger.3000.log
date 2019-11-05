@@ -1,0 +1,14 @@
+[ N 2019-11-05 00:36:50.7839 32632/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-11-05 00:36:50.8417 32635/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-11-05 00:36:50.8420 32635/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-11-05 00:36:50.8533 32635/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 32635
+2019/11/05 00:36:52 [error] 32648#0: *4 "/opt/rails_apps/lunch/app/assets/stylesheets/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", host: "0.0.0.0"
+[ N 2019-11-05 00:36:53.6171 32635/T7 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+
+[ N 2019-11-05 00:37:13.8401 32635/T5 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-11-05 00:37:13.8402 32635/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-11-05 00:37:13.8404 32635/Ta Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-11-05 00:37:13.8404 32635/Ta Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-11-05 00:37:13.8405 32635/T5 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-11-05 00:37:13.8405 32635/T5 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-11-05 00:37:14.6373 32635/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
