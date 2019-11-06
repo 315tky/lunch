@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'location/create'
+
   get 'password_resets/new'
 
   get 'password_resets/edit'
