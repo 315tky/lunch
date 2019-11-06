@@ -1,6 +1,18 @@
+
 <header class="navbar navbar-fixed-top navbar-inverse">
+<p>Click the button to get your coordinates.</p>
+<button onclick="getLocation()">Try It</button>
+<p id="demo"></p>
+
+<form id="myForm">
+  <label for="location">save current location:</label>
+  <input id="location" name="location" value="">
+  <input type="submit" value="add location">
+</form>
+<!-- <%= javascript_include_tag "geocoder.js", "location_form" %> -->
+ 
   <div class="container">
-    <%= link_to "lunch app", root_path, id: "logo" %>
+    <%= link_to "demo app", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>

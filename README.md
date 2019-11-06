@@ -12,10 +12,15 @@ Ideas and ToDos :
 
 - notes - Nov 2019
 ------------------
-click on "add location"
-goes to page or shows a form 
+click on "add location".
+goes to page or shows a form. 
 - name
 - description
 geocoder in the browser captures the location, 
 user submits - form detail gets sent back along with the geocodes,
-gets saved to database. 
+gets saved to database.
+
+by default show (list) any locations within 1km, 2km, 5km, 10km - toggle buttons or checkboxes etc..
+
+Form at the top, hide form until add button is shown.
+list below.
