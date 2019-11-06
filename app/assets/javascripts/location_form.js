@@ -9,7 +9,8 @@ window.addEventListener("load", function () {
     FD.append("longitude", locate.longitude);
     // Define what happens on successful data submission
     XHR.addEventListener("load", function(event) {
-      alert(event.target.responseText);
+      //alert(event.target.responseText);
+      window.location.href = "http://lunch-dev.saigos.space/users"
     });
 
     // Define what happens in case of error
@@ -18,7 +19,7 @@ window.addEventListener("load", function () {
     });
 
     // Set up our request
-    XHR.open("POST", "https://lunch-dev.saigos.space/");
+    XHR.open("POST", "https://lunch-dev.saigos.space/location/create");
 
     // The data sent is what the user provided in the form
     XHR.send(FD);

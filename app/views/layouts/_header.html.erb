@@ -8,6 +8,10 @@
   <label for="location">save current location:</label>
   <input id="location" name="location" value="">
   <input type="submit" value="add location">
+  <input name="authenticity_token" 
+         type="hidden" 
+         value="<%= form_authenticity_token %>"
+  />
 </form>
 <!-- <%= javascript_include_tag "geocoder.js", "location_form" %> -->
  
