@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '5.1.5'
-gem 'figaro'
 gem 'bootstrap-sass', '3.3.7'
 #gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'bcrypt', '3.1.11'
@@ -19,15 +18,17 @@ gem 'therubyracer', :platforms => :ruby
 gem 'nokogiri', '1.8.2' 
 
 group :development, :test do
-  gem 'sqlite3', '1.3.13'
+#  gem 'sqlite3', '1.3.13'
+  gem 'pg', '0.18.4'
+  gem 'activerecord-postgresql-adapter' 
   gem 'byebug',  '9.0.6', platform: :mri
 end
 
 group :development do
   gem 'web-console',           '3.5.1'
   gem 'listen',                '3.1.5'
-  gem 'spring',                '2.0.2'
-  gem 'spring-watcher-listen', '2.0.1'
+ # gem 'spring',                '2.0.2'
+ # gem 'spring-watcher-listen', '2.0.1'
 end
 
 group :test do
