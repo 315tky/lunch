@@ -1,3 +1,5 @@
+//const url = 'https://lunch.localdomain/'
+
 window.addEventListener("load", function () {
   function sendData(locate) {
     var XHR = new XMLHttpRequest();
@@ -10,7 +12,7 @@ window.addEventListener("load", function () {
     // Define what happens on successful data submission
     XHR.addEventListener("load", function(event) {
       //alert(event.target.responseText);
-      window.location.href = "http://lunch-dev.saigos.space/users"
+      window.location.href = "https://lunch.saigolocal"
     });
 
     // Define what happens in case of error
@@ -19,7 +21,7 @@ window.addEventListener("load", function () {
     });
 
     // Set up our request
-    XHR.open("POST", "https://lunch-dev.saigos.space/location/create");
+    XHR.open("POST", "https://lunch.saigolocal/location/create");
 
     // The data sent is what the user provided in the form
     XHR.send(FD);
