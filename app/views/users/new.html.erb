@@ -1,9 +1,9 @@
 <% provide(:title, 'Sign up') %>
 
+      <%= render 'shared/error_messages' %>
 <div class='signin-up' align='center'>
 <h1>Sign up</h1>
     <%= form_for(@user, url: signup_path) do |f| %>
-      <%= render 'shared/error_messages' %>
 
       <%= f.text_field :name, placeholder: "Name" %>
 
