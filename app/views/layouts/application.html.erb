@@ -2,6 +2,9 @@
 <html>
   <head>
     <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all',
+                                              'data-turbolinks-track': 'reload' %>
+   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta charset="UTF-8"> <meta name=viewport content="width=device-width, initial-scale=1">
     <title><%= full_title(yield(:title)) %></title>
     <%= render 'layouts/rails_default' %>
@@ -9,7 +12,7 @@
   </head>
   <body>
     <%= render 'layouts/header' %>
-    <div class="container">
+    <div align='center'>
       <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
       <% end %>

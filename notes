@@ -6,3 +6,16 @@ tidy up front-end - basic css
 put the add location field/button on the user page
 look at how/where to capture user session so can add geo location against correct user
 make a 'show locations for user' page.
+
+Sunday 24th November
+
+Got some nice front end working
+Fixed the BCrypt issue - had to upgrade the Gem
+Fixed incorrect gmail mailer settings - got sign-up working
+Clicking link in activation email doesnt work, because DNS cannot find the local lunch.saigoslocal domain of course, but set the activation field in the User record to true to allow log in for now.
+
+Next - 
+more front end stuff, need to make the User page look ok ( page after logging in )
+Need to make the error messages look good, for example if try and sign up with an email address already used. 
+Also the message after activate the account. 
+

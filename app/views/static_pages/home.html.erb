@@ -1,13 +1,13 @@
-<% provide(:title, "Home") %>
-<div class="center jumbotron">
-
-<h1>Welcome</h1>
-
-<h2>
-This is the home page
-</h2>
-
-<%= link_to "sign up", signup_path, class: "btn btn-lg btn-primary" %>
+<% provide(:title, "Lunch") %>
+<div class='home'>
+  <p align='center'>
+    <%= image_tag "home-logo.png", size: "150x150" %>
+  </p>
+<h1>
+  <ul>
+    <li><%= link_to "Sign Up", signup_path %></li>
+    <li><%= link_to "Sign In", login_path %></li>
+  </ul>
+</h1>
 </div>
-
 
