@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '5.1.5'
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass', '3.4.1'
 gem 'geocoder'
 #gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'bcrypt', '3.1.13'
