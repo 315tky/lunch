@@ -1,9 +1,36 @@
 <%= provide(:title, @user.name) %>
-<div class='signin-up'>
-      <h1>
-	<!-- <%=gravatar_for @user %> -->
-	<p> Username: <%= @user.name %> </p>
-	<p> Email address: <%= @user.email %> </p>
-      </h1>
+
+<div class='location-form'>
+  <p> Add a new lunch spot for your current location </p>
+<form id="myForm">
+  <input type="text" name="name" placeholder="provide a name">
+  <input type="text" name="description" placeholder="description">
+  <input type="submit" value="new lunch spot">
+  <input name="authenticity_token"
+         type="hidden"
+         value="<%= form_authenticity_token %>"
+  />
+</form>
 </div>
 
+<div class='location-table'>
+  <table>
+    <thead>
+    <tr><th colspan='4' align='center'> Your Lunch Spots </th></tr>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Map</th>
+        <th>Distance</th>
+      </tr>
+  </thead>
+    <% @user_locations.each do |user_location| %>
+      <tr>
+        <td><%= user_location.name %></td>
+        <td><%= user_location.description %></td>
+        <td>dummy map link</td>
+        <td>dummy distance value</td>
+     </tr>
+   <% end %>
+  </table>
+</div>

@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @user_locations = Location.get_user_locations(@user.id).paginate(page: params[:page])
     redirect_to root_url and return unless true
   end
 

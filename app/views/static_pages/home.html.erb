@@ -1,13 +1,24 @@
+  <% if logged_in? %>
+ <div class='home'>
+    <p align='center'>
+      <%= image_tag "home-logo.png", size: "150x150" %>
+    </p>
+  </div>
+    <div class="signin-up">
+    <p> Logged in as: "<%= current_user.name %>" </p>
+      <span><%= link_to "My Lunch Spots", current_user %></span>
+    </div>
+  <% else %>
 <% provide(:title, "Lunch") %>
-<div class='home'>
-  <p align='center'>
-    <%= image_tag "home-logo.png", size: "150x150" %>
-  </p>
-<h1>
-  <ul>
-    <li><%= link_to "Sign Up", signup_path %></li>
-    <li><%= link_to "Sign In", login_path %></li>
-  </ul>
-</h1>
-</div>
-
+  <div class='home'>
+    <p align='center'>
+      <%= image_tag "home-logo.png", size: "150x150" %>
+    </p>
+    <h1>
+      <ul>
+        <li><%= link_to "Sign Up", signup_path %></li>
+        <li><%= link_to "Sign In", login_path %></li>
+      </ul>
+    </h1>
+    </div>
+  <% end %>

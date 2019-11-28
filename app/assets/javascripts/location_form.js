@@ -1,4 +1,3 @@
-//const url = 'https://lunch.localdomain/'
 
 window.addEventListener("load", function () {
   function sendData(locate) {
@@ -10,10 +9,14 @@ window.addEventListener("load", function () {
     FD.append("latitude", locate.latitude);
     FD.append("longitude", locate.longitude);
     // Define what happens on successful data submission
-    XHR.addEventListener("load", function(event) {
-      //alert(event.target.responseText);
-      window.location.href = "https://lunch.saigolocal"
-    });
+    //XHR.addEventListener("load", function(event) {
+      //alert("Location added!");
+      //window.location.reload();
+      window.location.href = "https://lunch.saigolocal/locations/show";
+      //console.log(form)
+      //form.reset();
+      	
+   // });
 
     // Define what happens in case of error
     XHR.addEventListener("error", function(event) {
@@ -21,7 +24,7 @@ window.addEventListener("load", function () {
     });
 
     // Set up our request
-    XHR.open("POST", "https://lunch.saigolocal/location/create");
+    XHR.open("POST", "https://lunch.saigolocal/locations/new");
 
     // The data sent is what the user provided in the form
     XHR.send(FD);
@@ -29,7 +32,6 @@ window.addEventListener("load", function () {
  
   // Access the form element...
   var form = document.getElementById("myForm");
-
   // ...and take over its submit event.
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -39,4 +41,5 @@ window.addEventListener("load", function () {
       sendData(locate);
     }
   });
+  //document.getElementById("myForm").reset();
 });

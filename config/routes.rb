@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  post 'location/create'
+  post 'locations/new'
+  get 'locations/show'
 
   get 'password_resets/new'
 
